@@ -2,15 +2,15 @@ import Link from 'next/link'
 
 export default function Layout({ children }) {
   return (
-    <div className="layout">
+    <div className="min-h-screen">
       <header>
         <Link href="/">
           <a>
             <h1>
               <span>Just Add</span>
-              <span>Marmite</span>
+              <span>Chicken</span>
             </h1>
-            <h2>Spread The Joy</h2>
+            <h2>Bring the heat home</h2>
           </a>
         </Link>
       </header>
@@ -19,8 +19,9 @@ export default function Layout({ children }) {
         { children }
       </div>
 
-      <footer>
-        <p>Copyright 2021 Just Add Marmite :)</p>
+        <footer>
+          <h1>EatGoodFood</h1>
+  
       </footer>
     </div>
   )
