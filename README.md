@@ -13,3 +13,11 @@ npx create-next-app [your-site-name] -e https://github.com/iamshaunjp/next-conte
         npm i tailwind css react-icons autoprefixer @fullhuman/postcss-purgecss
         npm i postcss-import
         npm install tailwindcss
+        
+
+
+## install dependencies for contentful
+
+        npm install contentful
+
+
