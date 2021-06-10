@@ -1,9 +1,9 @@
 import { createClient } from "contentful";
+import RecipeCard from "./RecipeCard";
 
 // First connect index pages to contentful. 
 
 export async function getStaticProps(){
-
   const client = createClient( {
     // space: "j08karxmo721" ,
     // accessToken: "jljKwoluTiZsXR9iBcyiO36FmDen61YqKgWPQiot4KM",
@@ -19,15 +19,17 @@ export async function getStaticProps(){
       recipes: res.items
     }
   }
-
 }
 
 
-export default function Recipes( {recipes} ) {
-  console.log(recipes);
+export default function Recipes({ recipes }) {
+
   return (
-    <div className="recipe-list">
-      Recipe List
+  
+    <div>
+      {recipes.map(recipe => (
+        <RecipeCard key={recipe.sys.id} recipe={recipe} />
+      ))}
     </div>
   )
 }
