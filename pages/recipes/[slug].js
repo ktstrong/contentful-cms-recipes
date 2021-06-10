@@ -42,8 +42,9 @@ export default function RecipeDetails( {recipe} ) {
       <div className="w-100">
         <img src={featuredImage.fields.file.url} alt="helloooo" />
       </div>
+     
+      <h1 className="text-4xl text-footerGray capitalize m-12 mt-8 font-black bg-white p-5 text-center" > {recipe.fields.title} </h1>
 
-      <h1 className="text-4xl text-black capitalize m-2 mt-8 font-black" > {recipe.fields.title} </h1>
       <div  >
         <h1 className="text-xl font-semibold my-5">Ingredients: </h1>
           {ingredients.map(ing => (
@@ -59,11 +60,6 @@ export default function RecipeDetails( {recipe} ) {
         <h1 className="text-2xl font-semibold my-5">Method: </h1>
           <div className="mx-3 mb-10 text-xl leading-9" > {documentToReactComponents(method)} </div>
       </div>
-     
-    </div>
-    
-    
+    </div> 
   )
-
-
 }

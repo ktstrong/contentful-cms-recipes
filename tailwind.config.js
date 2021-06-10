@@ -14,7 +14,7 @@ module.exports = {
       red: "#f73718",
       darkPink : "#d11d53",
       offwhite: "#dce1e3",
-    }
+    },
   },
   variants: {
     borderColor: ["hover", "focus"],

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
   return (
@@ -22,10 +23,7 @@ export default function Layout({ children }) {
         { children }
       </div>
 
-        <footer>
-          <h1>EatGoodFood</h1>
-  
-      </footer>
+      <Footer/>
     </div>
   )
 }
