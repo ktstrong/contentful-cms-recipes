@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Layout({ children }) {
   return (
     <div className="bg-offwhite min-h-screen flex flex-col">
-      <header className="text-center my-40" >
+      <header className="text-center mt-10 mb-5" >
         <Link href="/">
           <a className="no-underline font-black uppercase inline-block" >
             <h1>

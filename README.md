@@ -20,4 +20,6 @@ npx create-next-app [your-site-name] -e https://github.com/iamshaunjp/next-conte
 
         npm install contentful
 
+## Rich text renderer 
 
+        npm install @contentful/rich-text-react-renderer

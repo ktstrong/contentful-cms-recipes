@@ -21,12 +21,10 @@ export async function getStaticProps(){
   }
 }
 
-
 export default function Recipes({ recipes }) {
-
   return (
   
-    <div>
+    <div className="grid grid-flow-col- grid-cols-2 justify-items-center" >
       {recipes.map(recipe => (
         <RecipeCard key={recipe.sys.id} recipe={recipe} />
       ))}
